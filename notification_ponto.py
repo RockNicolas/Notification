@@ -11,7 +11,7 @@ def enviar_notificacao():
             duration="short"
         )
         notificacao.set_audio(audio.LoopingCall10, loop=False)
-        notificacao.add_actions(label="Portal", launch="https://intranet.icc.org.br/FrameHTML/web/app/RH/PortalMeuRH/#/login")
+        notificacao.add_actions(label="Portal", launch="#")
         notificacao.show()
     except Exception as e:
         print(f"Ocorreu um erro: {e}")
